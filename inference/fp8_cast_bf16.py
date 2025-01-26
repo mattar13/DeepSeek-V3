@@ -105,8 +105,12 @@ def main(fp8_path, bf16_path):
 
 if __name__ == "__main__":
     parser = ArgumentParser()
-    parser.add_argument("--input-fp8-hf-path", type=str, required=True)
-    parser.add_argument("--output-bf16-hf-path", type=str, required=True)
-    args = parser.parse_args()
-    main(args.input_fp8_hf_path, args.output_bf16_hf_path)
+    #parser.add_argument("--input-fp8-hf-path", type=str, required=True)
+    #parser.add_argument("--output-bf16-hf-path", type=str, required=True)
+    #args = parser.parse_args()
+    #main(args.input_fp8_hf_path, args.output_bf16_hf_path)
+    #If we have access to the paths here, just add them in
+    input_fp8_hf_path = "E:\\Weights\\fp8_weights"
+    output_bf16_hf_path = "E:\\Weights\\bf16_weights"
+    main(input_fp8_hf_path, output_bf16_hf_path)
     
